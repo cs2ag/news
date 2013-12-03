@@ -154,6 +154,7 @@
 					<!-- Category -->
 					<settings.categories>
 						<TCEforms>
+                            <exclude>1</exclude>
 							<label>LLL:EXT:news/Resources/Private/Language/locallang_be.xml:flexforms_general.categories</label>
 							<config>
 								<type>select</type>
@@ -161,7 +162,6 @@
 								<treeConfig>
 									<parentField>parentcategory</parentField>
 									<appearance>
-										<maxLevels>99</maxLevels>
 										<expandAll>TRUE</expandAll>
 										<showHeader>TRUE</showHeader>
 									</appearance>
@@ -179,6 +179,7 @@
 					<!-- Category Mode -->
 					<settings.categoryConjunction>
 						<TCEforms>
+                            <exclude>1</exclude>
 							<label>LLL:EXT:news/Resources/Private/Language/locallang_be.xml:flexforms_general.categoryConjunction</label>
 							<config>
 								<type>select</type>
@@ -211,6 +212,7 @@
 					<!-- Include sub categories -->
 					<settings.includeSubCategories>
 						<TCEforms>
+                            <exclude>1</exclude>
 							<label>LLL:EXT:news/Resources/Private/Language/locallang_be.xml:flexforms_general.includeSubCategories</label>
 							<config>
 								<type>check</type>
@@ -272,6 +274,7 @@
 					<!-- Top News -->
 					<settings.topNewsRestriction>
 						<TCEforms>
+                            <exclude>1</exclude>
 							<label>LLL:EXT:news/Resources/Private/Language/locallang_be.xml:flexforms_general.topNewsRestriction</label>
 							<config>
 								<type>select</type>
@@ -338,6 +341,7 @@
 					<!-- startingpoint -->
 					<settings.startingpoint>
 						<TCEforms>
+							<exclude>1</exclude>
 							<label>LLL:EXT:lang/locallang_general.xml:LGL.startingpoint</label>
 							<config>
 								<type>group</type>
@@ -359,6 +363,7 @@
 					<!-- recursive -->
 					<settings.recursive>
 						<TCEforms>
+							<exclude>1</exclude>
 							<label>LLL:EXT:lang/locallang_general.xml:LGL.recursive</label>
 							<config>
 								<type>select</type>
@@ -487,6 +492,7 @@
 					<!-- Offset -->
 					<settings.offset>
 						<TCEforms>
+                            <exclude>1</exclude>
 							<label>LLL:EXT:news/Resources/Private/Language/locallang_be.xml:flexforms_additional.offset</label>
 							<config>
 								<type>input</type>
@@ -509,6 +515,7 @@
 					<!-- topNewsFirst -->
 					<settings.topNewsFirst>
 						<TCEforms>
+                            <exclude>1</exclude>
 							<label>LLL:EXT:news/Resources/Private/Language/locallang_be.xml:flexforms_additional.topNewsFirst</label>
 							<config>
 								<type>check</type>
@@ -519,6 +526,7 @@
 					<!-- only not displayed news -->
 					<settings.excludeAlreadyDisplayedNews>
 						<TCEforms>
+                            <exclude>1</exclude>
 							<label>LLL:EXT:news/Resources/Private/Language/locallang_be.xml:flexforms_additional.excludeAlreadyDisplayedNews</label>
 							<config>
 								<type>check</type>
@@ -529,6 +537,7 @@
 					<!-- disable overrideDemand -->
 					<settings.disableOverrideDemand>
 						<TCEforms>
+                            <exclude>1</exclude>
 							<label>LLL:EXT:news/Resources/Private/Language/locallang_be.xml:flexforms_additional.disableOverrideDemand</label>
 							<config>
 								<type>check</type>
@@ -555,6 +564,7 @@
 					<!-- Image Width -->
 					<settings.media.maxWidth>
 						<TCEforms>
+                            <exclude>1</exclude>
 							<label>LLL:EXT:news/Resources/Private/Language/locallang_be.xml:flexforms_template.mediaMaxWidth</label>
 							<config>
 								<type>input</type>
@@ -567,6 +577,7 @@
 					<!-- Image Height -->
 					<settings.media.maxHeight>
 						<TCEforms>
+                            <exclude>1</exclude>
 							<label>LLL:EXT:news/Resources/Private/Language/locallang_be.xml:flexforms_template.mediaMaxHeight</label>
 							<config>
 								<type>input</type>
@@ -579,6 +590,7 @@
 					<!-- crop length Teaser -->
 					<settings.cropMaxCharacters>
 						<TCEforms>
+                            <exclude>1</exclude>
 							<label>LLL:EXT:news/Resources/Private/Language/locallang_be.xml:flexforms_template.cropMaxCharacters</label>
 							<config>
 								<type>input</type>
