@@ -45,6 +45,9 @@ class Tx_News_Controller_NewsController extends Tx_News_Controller_NewsBaseContr
 	 */
 	protected $configurationManager;
 
+	/** @var array */
+	protected $ignoredSettingsForOverride = ['demandclass', 'orderbyallowed'];
+	
 	/**
 	 * Inject a news repository to enable DI
 	 *
@@ -131,7 +134,12 @@ class Tx_News_Controller_NewsController extends Tx_News_Controller_NewsBaseContr
 		unset($overwriteDemand['orderByAllowed']);
 
 		foreach ($overwriteDemand as $propertyName => $propertyValue) {
-			Tx_Extbase_Reflection_ObjectAccess::setProperty($demand, $propertyName, $propertyValue);
+			if(in_array(strtolower($propertyName), $this->ignoredSettingsForOverride, true)) {
+                		continue;
+            		}
+			if ($propertyValue !== '') {
+				Tx_Extbase_Reflection_ObjectAccess::setProperty($demand, $propertyName, $propertyValue);
+			}
 		}
 		return $demand;
 	}
